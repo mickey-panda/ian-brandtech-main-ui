@@ -243,57 +243,109 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="py-28 md:py-36 bg-emerald-50/20 isolate">
-        <div className="w-full max-w-6xl mx-auto px-6 sm:px-10 lg:px-12">
-          <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
-              What We Actually Do
-            </h2>
-            <p className="mt-5 text-xl text-slate-600 max-w-3xl mx-auto">
-              Three focused disciplines. One goal: sustainable business growth.
-            </p>
-          </div>
+      <section className="relative py-28 md:py-40 bg-gradient-to-b from-emerald-50/30 via-white to-teal-50/20 isolate overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none opacity-40">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-300/10 rounded-full blur-3xl animate-pulse-slow" />
+            <div className="absolute bottom-0 left-0 w-80 h-80 bg-teal-300/10 rounded-full blur-3xl animate-pulse-slow delay-1500" />
+        </div>
 
-          <div className="min-h-[460px] md:min-h-[500px] flex items-center justify-center">
-            <div className="w-full">
-              <AnimatePresence mode="wait">
+        <div className="container mx-auto px-6 sm:px-10 lg:px-12 relative z-10">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            <motion.div
+                initial={{ opacity: 0, scale: 0.92 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                className="relative w-full max-w-[340px] lg:max-w-[460px] mx-auto lg:mx-0 order-1 lg:order-none"
+            >
+                <div className="relative aspect-square rounded-full overflow-hidden shadow-2xl border-8 border-white/80">
+                <Image
+                    src="/what-we-do.png"
+                    alt="Our brand identity expertise"
+                    fill
+                    className="object-cover"
+                    quality={92}
+                    sizes="(max-width: 1024px) 340px, 460px"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-emerald-400/5 pointer-events-none" />
+                </div>
+
                 <motion.div
-                  key={activeCard}
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -40 }}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
-                >
-                  <div className={`bg-gradient-to-br ${services[activeCard].color} p-1.5 rounded-3xl shadow-2xl mx-auto max-w-4xl`}>
-                    <div className="bg-white rounded-2xl p-10 md:p-14 text-center">
-                      <div className="text-7xl md:text-8xl mb-8">{services[activeCard].icon}</div>
-                      <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                        {services[activeCard].title}
-                      </h3>
-                      <p className="text-lg md:text-xl text-slate-700 leading-relaxed max-w-prose mx-auto">
-                        {services[activeCard].desc}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
+                className="absolute -bottom-8 -right-8 w-24 h-24 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-2xl"
+                animate={{ scale: [1, 1.12, 1], opacity: [0.6, 0.9, 0.6] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                />
+            </motion.div>
 
-              <div className="flex justify-center gap-5 mt-12 md:mt-16">
-                {services.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setActiveCard(i)}
-                    className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                      i === activeCard
-                        ? 'bg-emerald-600 scale-125 shadow-lg shadow-emerald-300/50'
-                        : 'bg-slate-300 hover:bg-emerald-400 hover:scale-110'
-                    }`}
-                    aria-label={`Select service ${i + 1}`}
-                  />
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.9, delay: 0.3 }}
+                className="w-full lg:pl-8 order-2 lg:order-none"
+            >
+                <div className="text-center lg:text-left mb-12 lg:mb-16">
+                <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent mb-5">
+                    Crafting Distinctive Brands
+                </h2>
+                <p className="text-lg sm:text-xl text-slate-600/90 max-w-3xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    From first impression to lasting recognition — we create brand worlds that feel authentic and unforgettable.
+                </p>
+                </div>
+
+                <div className="space-y-10 md:space-y-12">
+                {[
+                    {
+                    title: "Logo & Core Identity",
+                    desc: "Timeless logos and visual foundations that instantly communicate who you are and what you stand for.",
+                    icon: "✦",
+                    },
+                    {
+                    title: "Brand Guidelines",
+                    desc: "Clear, elegant systems that ensure your brand remains consistent and powerful across every channel.",
+                    icon: "📐",
+                    },
+                    {
+                    title: "Digital Product Design",
+                    desc: "Interfaces and experiences that extend your brand personality into intuitive, engaging digital touchpoints.",
+                    icon: "✧",
+                    },
+                    {
+                    title: "Brand Activation & Launch",
+                    desc: "Strategic storytelling, campaigns and launches that bring your new identity to life with impact.",
+                    icon: "🌱",
+                    },
+                    {
+                    title: "Audience & Performance Insights",
+                    desc: "Continuous listening, perception tracking and data-informed refinement so your brand evolves intelligently.",
+                    icon: "⟳",
+                    },
+                ].map((service, index) => (
+                    <motion.div
+                    key={service.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: index * 0.13 }}
+                    className="group flex gap-6 items-start"
+                    >
+                    <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500/10 to-teal-600/10 flex items-center justify-center text-emerald-600 text-2xl border border-emerald-200/40 group-hover:border-emerald-400/60 transition-all duration-400 group-hover:scale-105">
+                        {service.icon}
+                    </div>
+                    <div>
+                        <h3 className="text-2xl font-semibold text-slate-900 group-hover:text-emerald-700 transition-colors duration-300 mb-2.5">
+                        {service.title}
+                        </h3>
+                        <p className="text-slate-600 leading-relaxed font-light">
+                        {service.desc}
+                        </p>
+                    </div>
+                    </motion.div>
                 ))}
-              </div>
+                </div>
+            </motion.div>
             </div>
-          </div>
         </div>
       </section>
 
