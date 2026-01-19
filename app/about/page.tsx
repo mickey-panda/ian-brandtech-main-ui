@@ -1,13 +1,13 @@
+import AboutUsComponent from "@/components/AboutUsComponent";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import ServiceComponent from "@/components/ServiceComponent";
 
 
-export default function Services() {
+export default function About() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar/>
-      <ServiceComponent/>
+      <AboutUsComponent/>
       <Footer/>
     </div>
   );
