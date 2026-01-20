@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Company Links */}
-          <div>
+          {/* <div>
             <h3 className="text-xl font-bold mb-6 text-white">Company</h3>
             <ul className="space-y-4">
               {quickLinks.map((item) => (
@@ -55,7 +55,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Column 3: Address */}
           <div>
