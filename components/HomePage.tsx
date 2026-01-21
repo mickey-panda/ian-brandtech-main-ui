@@ -30,22 +30,22 @@ export default function HomePage() {
 
   const recentWorks = [
     {
-      title: "EcoTrack Platform",
-      description: "Sustainable living app helping users reduce carbon footprint with smart tracking & insights.",
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4WJ1ZwS4mcxHVh5YoCuKuAAF6ldBv5Ehpw&s",
-      link: "/work/ecotrack",
+      title: "Bärd Organics",
+      description: "For Bard Organics, a trusted manufacturer of OTC health and wellness solutions, we crafted a brand identity that balances scientific authority with compassionate care.",
+      imageUrl: "/bard.png",
+      link: "/work/bard-organic",
     },
     {
-      title: "HealthSync Dashboard",
-      description: "Modern health monitoring dashboard for clinics with real-time analytics and patient portal.",
-      imageUrl: "https://static.fitnesssyncer.com/resources/documentation/dashboard.png",
-      link: "/work/healthsync",
+      title: "Caterzhub",
+      description: "For **Caterzhub**, a multi-category delivery platform for food, meat, and groceries, we architected and developed a complete mobile ecosystem.",
+      imageUrl: "/caterzhub.png",
+      link: "/work/caterzhub",
     },
     {
-      title: "Finova Banking App",
-      description: "Next-gen mobile banking experience focused on simplicity, security, and emerald-green elegance.",
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfUzWPyUMvt9qDvoUBitXkfNig01-SE9Yaxg&s",
-      link: "/work/finova",
+      title: "NST Wood Studio",
+      description: "Since 1965, NST has defined artisan woodcraft. We modernized their legacy with a complete brand transformation: a sophisticated new logo & identity, a stunning website that showcases their masterwork, and personal branding for their leaders.",
+      imageUrl: "/nstwood.png",
+      link: "/work/nstwood",
     },
   ];
 
