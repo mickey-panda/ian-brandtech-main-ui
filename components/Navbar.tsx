@@ -90,7 +90,7 @@ export default function Navbar() {
             <div className="hidden md:block">
               <button
                 onClick={() => setIsCallbackOpen(true)}
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md"
+                className="bg-emerald-900 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 Request Callback
               </button>
@@ -133,7 +133,7 @@ export default function Navbar() {
                   setIsMobileMenuOpen(false);
                   setIsCallbackOpen(true);
                 }}
-                className="block w-full text-center px-3 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-md mt-4 transition-all duration-200 shadow-sm hover:shadow-md"
+                className="block w-full text-center px-3 py-2 bg-emerald-900 hover:bg-green-700 text-white font-medium rounded-md mt-4 transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 Request Callback
               </button>

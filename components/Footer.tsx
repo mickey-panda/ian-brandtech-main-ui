@@ -18,7 +18,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-r from-slate-900 via-green-900 to-slate-900 text-white">
+    <footer className="bg-emerald-900 text-white">
       <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         {/* 3 Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 mb-12">
@@ -65,8 +65,8 @@ export default function Footer() {
                 <p className="font-semibold">IAN BrandTech Solutions</p>
               </div>
               <div>
-                <p>Mindspace, Hitech City</p>
-                <p>Hyderabad, Telangana 500081</p>
+                <p>9-4-116/75, Balreddy Nagar , Tolichowki</p>
+                <p>Hyderabad , Telangana, India - 500008</p>
               </div>
               <p className="text-slate-400">
                 Serving clients globally with innovative IT consulting
