@@ -84,8 +84,8 @@ export default function ContactUsComponent() {
 
             <div className="text-lg text-slate-600 leading-relaxed font-light space-y-2">
               <p className="font-medium text-slate-800">IAN BrandTech Solutions</p>
-              <p>Mindspace, Hitech City</p>
-              <p>Hyderabad, Telangana 500081</p>
+              <p>9-4-116/75, Balreddy Nagar , Tolichowki</p>
+              <p>Hyderabad , Telangana, India - 500008</p>
             </div>
           </motion.div>
 
