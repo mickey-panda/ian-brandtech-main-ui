@@ -8,11 +8,11 @@ export default function Footer() {
     { name: 'Contact Us', href: '/contact' },
   ];
 
-  const quickLinks = [
-    { name: 'Join with us', href: '/join' },
-    { name: 'Our Marketing', href: '/marketing' },
-    { name: 'Job opening', href: '/careers' },
-    { name: 'Affiliate programme', href: '/affiliate' },
+  const servicesList = [
+    { name: 'Brand Identity & Building', href: '/services' },
+    { name: 'Tech Development', href: '/services' },
+    { name: 'Brand Presence', href: '/services' },
+    { name: 'Marketing', href: '/services' },
   ];
 
   const currentYear = new Date().getFullYear();
@@ -41,10 +41,10 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Company Links */}
-          {/* <div>
-            <h3 className="text-xl font-bold mb-6 text-white">Company</h3>
+          <div>
+            <h3 className="text-xl font-bold mb-6 text-white">Our Services</h3>
             <ul className="space-y-4">
-              {quickLinks.map((item) => (
+              {servicesList.map((item) => (
                 <li key={item.name}>
                   <Link 
                     href={item.href}
@@ -55,7 +55,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div> */}
+          </div>
 
           {/* Column 3: Address */}
           <div>

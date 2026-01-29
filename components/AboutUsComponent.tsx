@@ -24,7 +24,7 @@ export default function AboutUsComponent() {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-32 lg:mb-40">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16 lg:mb-20">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -60,12 +60,12 @@ export default function AboutUsComponent() {
                 IAN BrandTech Solution was born from an entrepreneur’s firsthand understanding of what it takes to build and scale businesses in the global marketplace. We’ve walked the path ourselves, faced the challenges, and discovered what truly works. Now, we’re dedicated to helping brands across the world achieve the same success.
               </p>
 
-              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed font-light">
-                What We Do ?
-              </p>
+              
             </motion.div>
           </div>
-
+            <p className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-emerald-700 leading-relaxed mb-12 lg:mb-16">
+                What We Do?
+            </p>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
