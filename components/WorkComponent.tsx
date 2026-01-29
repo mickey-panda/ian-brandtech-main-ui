@@ -58,6 +58,8 @@ export default function WorkComponent() {
 
                 <Link
                   href={project.link}
+                  target='_blank'
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors mt-auto text-sm md:text-base"
                 >
                   Learn More

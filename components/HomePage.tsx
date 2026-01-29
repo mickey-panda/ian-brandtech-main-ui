@@ -33,19 +33,19 @@ export default function HomePage() {
       title: "Bärd Organics",
       description: "For Bard Organics, a trusted manufacturer of OTC health and wellness solutions, we crafted a brand identity that balances scientific authority with compassionate care.",
       imageUrl: "/bard.png",
-      link: "/work/bard-organic",
+      link: "https://www.bardorganic.com/",
     },
     {
       title: "Caterzhub",
       description: "For **Caterzhub**, a multi-category delivery platform for food, meat, and groceries, we architected and developed a complete mobile ecosystem.",
       imageUrl: "/caterzhub.png",
-      link: "/work/caterzhub",
+      link: "https://www.caterzhub.in/",
     },
     {
       title: "NST Wood Studio",
       description: "Since 1965, NST has defined artisan woodcraft. We modernized their legacy with a complete brand transformation: a sophisticated new logo & identity, a stunning website that showcases their masterwork, and personal branding for their leaders.",
       imageUrl: "/nstwood.png",
-      link: "/work/nstwood",
+      link: "https://www.nstwoodstudio.com/",
     },
   ];
 
@@ -346,6 +346,7 @@ export default function HomePage() {
                   </p>
                   <a
                     href={work.link}
+                    target='_blank'
                     className="inline-flex items-center gap-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors text-sm md:text-base"
                   >
                     Learn More
