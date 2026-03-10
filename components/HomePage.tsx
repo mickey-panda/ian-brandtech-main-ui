@@ -146,13 +146,13 @@ export default function HomePage() {
                   </svg>
                 </motion.a>
 
-                <motion.a
+                {/* <motion.a
                   href="/work"
                   className="group inline-flex items-center justify-center gap-2.5 border-2 border-emerald-300/70 hover:border-emerald-500 text-emerald-700 hover:text-emerald-800 px-7 py-3.5 sm:px-8 sm:py-4 rounded-2xl text-base sm:text-lg font-semibold transition-all duration-400 hover:bg-emerald-50/70 hover:shadow-xl min-w-[180px] sm:min-w-[180px]"
                   whileHover={{ scale: 1.02 }}
                 >
                   See Our Work →
-                </motion.a>
+                </motion.a> */}
               </motion.div>
             </motion.div>
 
@@ -360,7 +360,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12 md:mt-16">
-            <motion.a
+            {/* <motion.a
               href="/work"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-xl text-base md:text-lg font-semibold shadow-xl hover:shadow-2xl hover:bg-emerald-700 transition-all hover:-translate-y-1"
               whileHover={{ scale: 1.05 }}
@@ -370,7 +370,7 @@ export default function HomePage() {
               <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </motion.a>
+            </motion.a> */}
           </div>
         </div>
       </section>
