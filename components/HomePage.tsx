@@ -306,7 +306,7 @@ export default function HomePage() {
       </section>
 
       {/* Recent Works – tighter mobile spacing */}
-      <section className="py-20 md:py-36 bg-white isolate">
+      {/* <section className="py-20 md:py-36 bg-white isolate">
         <div className="w-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-12">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
@@ -360,7 +360,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12 md:mt-16">
-            {/* <motion.a
+            <motion.a
               href="/work"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-xl text-base md:text-lg font-semibold shadow-xl hover:shadow-2xl hover:bg-emerald-700 transition-all hover:-translate-y-1"
               whileHover={{ scale: 1.05 }}
@@ -370,10 +370,10 @@ export default function HomePage() {
               <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </motion.a> */}
+            </motion.a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials – tighter spacing */}
       <section className="py-20 md:py-36 bg-emerald-50/10 isolate">
